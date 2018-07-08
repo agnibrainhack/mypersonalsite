@@ -5,7 +5,7 @@ var path = require("path");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('./index.html')
+    res.json('Hola')
 });
 
 router.get('/resume', function(req, res, next) {
