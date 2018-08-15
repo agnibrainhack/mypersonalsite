@@ -21,7 +21,8 @@ router.get('/apk', function(req, res, next) {
     var stat = fileSystem.statSync(filePath);
     //res.sendFile(__dirname + '/static/WeCare.apk')
     res.writeHead(200, {
-        'Content-Type': 'application/vnd.android.package-archive',
+        "Content-Type": "application/octet-stream",
+        "Content-Disposition": "attachment; filename=" + "WeCare.apk",
         'Content-Length': stat.size
     });
 
