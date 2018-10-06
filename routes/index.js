@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/resume', function(req, res, next) {
 
-    res.sendFile(__dirname + '/static/nilagnik_resume_new.pdf')
+    res.sendFile(__dirname + '/static/Nilagnik-resume.pdf')
 });
 
 router.get('/apk', function(req, res, next) {
