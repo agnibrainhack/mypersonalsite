@@ -15,6 +15,12 @@ router.get('/resume', function(req, res, next) {
     res.sendFile(__dirname + '/static/Nilagnik-resume.pdf')
 });
 
+router.get('/amit', function(req, res, next) {
+
+    res.sendFile(__dirname + '/static/amitresume.pdf')
+});
+
+
 router.get('/apk', function(req, res, next) {
 
     var filePath = path.join(__dirname, '/static/WeCare.apk');
